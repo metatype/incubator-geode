@@ -64,6 +64,11 @@ dependencies {
     ext.optional = true;
   }
   compile 'javax.resource:javax.resource-api:' + project.'javax.resource-api.version'
+  compile 'javax.activation:activation:1.1.1'
+  compile 'javax.xml.bind:jaxb-api:2.2.11'
+  compile 'com.sun.xml.bind:jaxb-core:2.2.11'
+  compile 'com.sun.xml.bind:jaxb-impl:2.2.11'
+
   compile ('mx4j:mx4j:' + project.'mx4j.version') {
     ext.optional = true;
   }
@@ -241,4 +246,3 @@ dependencies {
 }
 
 tasks.eclipse.dependsOn(generateGrammarSource)
-
